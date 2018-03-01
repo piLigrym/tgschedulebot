@@ -1,0 +1,258 @@
+2018-02-27 00:04:27.366761
+Update "%s" caused error "%s"
+2018-02-27 00:07:55.668553
+Update "%s" caused error "%s"
+2018-02-27 11:43:49.034448
+Traceback (most recent call last):
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Python 3.5.2\Lib\http\client.py", line 1197, in getresponse
+    response.begin()
+  File "D:\Python 3.5.2\Lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "D:\Python 3.5.2\Lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Python 3.5.2\Lib\socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Python 3.5.2\Lib\ssl.py", line 929, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Python 3.5.2\Lib\ssl.py", line 791, in read
+    return self._sslobj.read(len, buffer)
+  File "D:\Python 3.5.2\Lib\ssl.py", line 575, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3.5.2\lib\site-packages\telegram\utils\request.py", line 190, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:/PythonWorkspace/schedulebot/main.py", line 35, in today
+    update.message.reply_text(result_text)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\message.py", line 421, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\bot.py", line 57, in decorator
+    result = func(self, *args, **kwargs)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\bot.py", line 82, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "D:\Python 3.5.2\lib\site-packages\telegram\utils\request.py", line 272, in post
+    **urlopen_kwargs)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\utils\request.py", line 192, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+
+2018-02-27 11:43:49.040452
+Update "%s" caused error "%s"
+2018-02-27 11:44:03.399703
+Update "%s" caused error "%s"
+2018-02-27 11:44:36.638455
+Update "%s" caused error "%s"
+2018-02-27 11:45:03.366872
+Update "%s" caused error "%s"
+2018-02-27 11:45:30.005590
+Update "%s" caused error "%s"
+2018-02-27 11:54:18.764919
+Update "%s" caused error "%s"
+2018-02-27 11:55:46.224094
+Update "%s" caused error "%s"
+2018-02-27 11:56:41.093675
+Update "%s" caused error "%s"
+2018-02-27 11:57:53.011168
+Update "%s" caused error "%s"
+2018-02-27 11:59:46.466972
+Update "%s" caused error "%s"
+2018-02-27 12:00:26.846368
+Update "%s" caused error "%s"
+2018-02-27 12:00:50.483143
+Update "%s" caused error "%s"
+2018-02-27 12:01:33.543791
+Update "%s" caused error "%s"
+2018-02-27 12:02:46.878439
+Update "%s" caused error "%s"
+2018-02-27 12:03:04.252637
+Update "%s" caused error "%s"
+2018-02-27 12:03:21.636627
+Update "%s" caused error "%s"
+2018-02-27 12:03:40.189498
+Update "%s" caused error "%s"
+2018-02-27 12:04:51.330396
+Update "%s" caused error "%s"
+2018-02-27 12:06:23.711441
+Update "%s" caused error "%s"
+2018-02-27 12:07:32.012763
+Update "%s" caused error "%s"
+2018-02-27 12:08:01.940798
+Update "%s" caused error "%s"
+2018-02-27 12:08:33.170651
+Update "%s" caused error "%s"
+2018-02-27 12:11:44.383857
+Traceback (most recent call last):
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Python 3.5.2\Lib\http\client.py", line 1197, in getresponse
+    response.begin()
+  File "D:\Python 3.5.2\Lib\http\client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "D:\Python 3.5.2\Lib\http\client.py", line 258, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Python 3.5.2\Lib\socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Python 3.5.2\Lib\ssl.py", line 929, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Python 3.5.2\Lib\ssl.py", line 791, in read
+    return self._sslobj.read(len, buffer)
+  File "D:\Python 3.5.2\Lib\ssl.py", line 575, in read
+    v = self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3.5.2\lib\site-packages\telegram\utils\request.py", line 190, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 70, in request
+    **urlopen_kw)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 666, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\util\retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 617, in urlopen
+    chunked=chunked)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 405, in _make_request
+    exc_cls=ReadTimeoutError)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\vendor\ptb_urllib3\urllib3\connectionpool.py", line 321, in _raise_timeout
+    raise exc_cls(*args)
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=5.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:/PythonWorkspace/schedulebot/main.py", line 52, in current_week
+    update.message.reply_text(day_text)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\message.py", line 421, in reply_text
+    return self.bot.send_message(self.chat_id, *args, **kwargs)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\bot.py", line 57, in decorator
+    result = func(self, *args, **kwargs)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\bot.py", line 82, in decorator
+    result = self._request.post(url, data, timeout=kwargs.get('timeout'))
+  File "D:\Python 3.5.2\lib\site-packages\telegram\utils\request.py", line 272, in post
+    **urlopen_kwargs)
+  File "D:\Python 3.5.2\lib\site-packages\telegram\utils\request.py", line 192, in _request_wrapper
+    raise TimedOut()
+telegram.error.TimedOut: Timed out
+
+2018-02-27 12:12:16.943482
+Update "%s" caused error "%s"
+2018-02-27 12:12:59.011417
+Update "%s" caused error "%s"
+2018-02-27 12:15:52.346595
+Traceback (most recent call last):
+  File "D:/PythonWorkspace/schedulebot/main.py", line 52, in current_week
+    update.message.send_text(day_text)
+AttributeError: 'Message' object has no attribute 'send_text'
+
+2018-02-27 12:16:07.242581
+Update "%s" caused error "%s"
+2018-02-27 12:16:33.568973
+Update "%s" caused error "%s"
+2018-02-27 21:32:15.337501
+Update "%s" caused error "%s"
+2018-02-27 21:35:09.985478
+Update "%s" caused error "%s"
+2018-02-27 21:36:49.270341
+Update "%s" caused error "%s"
+2018-02-27 21:37:34.459271
+Update "%s" caused error "%s"
+2018-02-27 21:37:48.940871
+Update "%s" caused error "%s"
+2018-02-27 21:42:12.105690
+Update "%s" caused error "%s"
+2018-02-27 21:43:17.277776
+Update "%s" caused error "%s"
+2018-02-27 21:43:32.907916
+Update "%s" caused error "%s"
+2018-02-27 21:48:38.862086
+Update "%s" caused error "%s"
+2018-02-27 22:29:29.882315
+Update "%s" caused error "%s"
+2018-02-27 22:32:50.227424
+Update "%s" caused error "%s"
+2018-02-27 22:43:55.419367
+Update "%s" caused error "%s"
+2018-02-27 22:45:49.436419
+Update "%s" caused error "%s"
+2018-02-27 22:46:04.585540
+Update "%s" caused error "%s"
+2018-02-27 22:47:19.037430
+Update "%s" caused error "%s"
+2018-02-27 22:47:32.356839
+Update "%s" caused error "%s"
+2018-02-27 22:51:49.530451
+Update "%s" caused error "%s"
+2018-02-27 22:52:02.852415
+Update "%s" caused error "%s"
+2018-02-27 23:24:48.768210
+Update "%s" caused error "%s"
+2018-02-27 23:25:46.884838
+Update "%s" caused error "%s"
+2018-02-27 23:27:21.847478
+Update "%s" caused error "%s"
+2018-02-27 23:30:58.223480
+Update "%s" caused error "%s"
+2018-02-27 23:33:33.354191
+Update "%s" caused error "%s"
+2018-02-27 23:34:14.820329
+Update "%s" caused error "%s"
+2018-02-27 23:35:25.002648
+Update "%s" caused error "%s"
+2018-02-27 23:41:14.919291
+Update "%s" caused error "%s"
+2018-02-27 23:43:22.557573
+Update "%s" caused error "%s"
+2018-02-27 23:45:49.337914
+Update "%s" caused error "%s"
+2018-02-27 23:46:16.914029
+Update "%s" caused error "%s"
+2018-02-27 23:46:42.379558
+Update "%s" caused error "%s"
+2018-02-27 23:46:56.790822
+Update "%s" caused error "%s"
+2018-02-27 23:48:23.884204
+Update "%s" caused error "%s"
+2018-02-27 23:52:55.756649
+Update "%s" caused error "%s"
