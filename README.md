@@ -1,13 +1,14 @@
 Simple Schedule Bot for Chernihiv National Technological University.
 
 Installation guide:
-0. Clone this repo;
-1. pip3 install python-telegram-bot;
-2. pip3 install pymysql;
-3. deploy db schema from schedulebot/schedule.sql and fill it with your data
+
+1. Clone this repo;
+2. pip3 install python-telegram-bot;
+3. pip3 install pymysql;
+4. deploy db schema from schedulebot/schedule.sql and fill it with your data
     (temporary outdated)
-4. create configuration file:
----------------------------------------------------------------------
+5. create configuration file:
+```
 # Information about database
 [database]
 db_host=
@@ -21,5 +22,5 @@ token=
 log_dir=/var/log/
 # Directory with base voice samples (leave empty to disable feature)
 voice_dir=path/voice_samples/base/
-----------------------------------------------------------------------
-5. Run bot using "D:\Desktop\bot> python .\schedulebot\schedule.py -c '<config_path>'"
+```
+6. Run bot using "D:\Desktop\bot> python .\schedulebot\schedule.py -c '<config_path>'"
