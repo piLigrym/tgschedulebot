@@ -1,0 +1,3 @@
+schedulebot/__pycache__/*
+schedulebot/logs/*
+*.conf

@@ -1,5 +1,7 @@
-import db_helper
-import logger
+# -*- coding: utf-8 -*-
+
+import SqlManager
+import Logger
 import traceback
 import datetime
 
@@ -32,7 +34,7 @@ def get_schedule_by_date(date):
         week_day = days[week_day_ind]
         week_id = get_week_id()
 
-        result_rows = db_helper.select_by_day_week(week_id, week_day)
+        result_rows = SqlManager.select_by_day_week(week_id, week_day)
         result_text = ""
         for row in result_rows:
             row_text = "{} пара: {} - {}\n{}\n" \
@@ -43,7 +45,7 @@ def get_schedule_by_date(date):
             result_text += row_text
         return result_text
     except:
-        logger.log(traceback.format_exc())
+        Logger.log(traceback.format_exc())
         return None
 
 
@@ -52,7 +54,7 @@ def get_schedule_current_week(week_id):
         result_text = []
         for i in range(5):
             week_day = days[i]
-            result_rows = db_helper.select_by_day_week(week_id, week_day)
+            result_rows = SqlManager.select_by_day_week(week_id, week_day)
             day_text = ""
             if len(result_rows) > 0:
                 day_text += "{}:\n+++++++++++++++++++++++++++\n".format(days_ru[i])
@@ -69,7 +71,7 @@ def get_schedule_current_week(week_id):
             result_text.append(day_text)
         return result_text
     except:
-        logger.log(traceback.format_exc())
+        Logger.log(traceback.format_exc())
 
 
 

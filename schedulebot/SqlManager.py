@@ -1,19 +1,19 @@
+# -*- coding: utf-8 -*-
+
 import pymysql
-import logger
+import Logger
+from BotConfig import BotConfig
 
 
-HOST = ''
-USER = ''
-PASSWORD = ''
 DATABASE = 'db_schedule'
 CHARSET = 'utf8'
 
 
 def init():
     return pymysql.connect(
-        host=HOST,
-        user=USER,
-        password=PASSWORD,
+        host=BotConfig.db_host,
+        user=BotConfig.db_user,
+        password=BotConfig.db_pass,
         db=DATABASE,
         charset=CHARSET,
         cursorclass=pymysql.cursors.DictCursor)
@@ -28,7 +28,7 @@ def insert(sql):
         connection.close()
         return True
     except pymysql.Error as e:
-        logger.log(e)
+        Logger.log(e)
         return False
 
 
@@ -42,7 +42,5 @@ def select_by_day_week(week_id, week_day):
         rows = cursor.fetchall()
         return rows
     except pymysql.Error as e:
-        logger.log(e)
+        Logger.log(e)
         return None
-
-
